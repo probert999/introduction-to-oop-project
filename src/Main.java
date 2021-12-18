@@ -1,4 +1,4 @@
-public class oopExercise {
+public class Main {
 
   public static void main(String[] args) {
     Pigeon pippa = new Pigeon("Pippa", "Grey");
