@@ -1,0 +1,32 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class Bird  implements Dance {
+  # String name
+  # String color
+
+  + {abstract} speak() : void
+  + fly() :void
+}
+
+interface Dance {
+  + spin() :void
+  + doTheCaterpillar() :void
+  + jump() : void
+}
+
+class Pigeon extends Bird{
+  + eatPizza() :void
+  + speak() :void
+  + sleep() : void
+}
+
+class Penguin extends Bird{
+  + speak() : void
+  + fly() : void
+}
+
+class Parrot extends Bird{
+  + speak() : void
+}
+
+@enduml
